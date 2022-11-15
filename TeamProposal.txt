@@ -1,10 +1,5 @@
-11/14/22
-Mace:
---Initalizing repository and setting up files.
+Scope Of Project
 
-
---Topic---
-Mace:
- -I vote for the To Do List. Seems easiest to work with.
-Claire:     
-Phi:        
+Mace :  # 1 & 2
+Claire  # 3
+Phi     # Extra Credit
