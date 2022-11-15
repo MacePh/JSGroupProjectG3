@@ -12,7 +12,47 @@ Phi:
 =======
 Scope Of Project
 
-Mace :  # 1 & 2
-Claire  # 3
-Phi     # Extra Credit                                                                                                                                                                                                  
+
+***for all sub pages***
+Extra Credit: - When a list item is clicked, cross it out, then remove it after 1 second.
+--0Show an unordered list of to do's 
+--Show an input to enter a new to do 
+--Show a button to add a to  do. When the button is clicked: 
+--The text from the input box is used to add a list item to the bottom of the list 
+--The text from the input box is cleared out.
+--When the user clicks on a list item, it is removed
+
+
+---------HOME PAGE  
+Nav Bar 
+Paragraph about to do lists. 
+Footer 
+--put on all pages
+--mirror to all sub pages
+--4 tabs
+
+
+
+
+-------------Mace.html
+-Make list items a button that will dissapear/delete when clicked
+-Functionality:
+--order of list
+--arraYS
+
+
+------------Claire.html 
+Add To Do List with option to add *important*
+    --checkbox?
+Add new to do lists (or button to do so) 
+--card  
+
+
+------------Phi.html       
+--Add animation when delete or add item.
+--Create a history array from other pages.
+
+
+
+
 >>>>>>> b9d85fc665ae63d04d12caa8cf3d1a18c2b2c4fe
