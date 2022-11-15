@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 11/14/22
 Mace:
 --Initalizing repository and setting up files.
@@ -8,3 +9,10 @@ Mace:
  -I vote for the To Do List. Seems easiest to work with.
 Claire:     
 Phi:        
+=======
+Scope Of Project
+
+Mace :  # 1 & 2
+Claire  # 3
+Phi     # Extra Credit                                                                                                                                                                                                  
+>>>>>>> b9d85fc665ae63d04d12caa8cf3d1a18c2b2c4fe
