@@ -13,44 +13,70 @@
    
   </head>
   <body>
-        <nav class="navbar navbar-expand-sm navbar-light bg-primary">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">To Do Lists!</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarID"
-                    aria-controls="navbarID" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarID">
-                    <div class="navbar-nav">
-                        <a class="nav-link active" aria-current="page" href="Mace.html">Mace</a>
-                        <a class="nav-link active" aria-current="page" href="Phi.html">Phi</a>
-                        <a class="nav-link active" aria-current="page" href="Claire.html">Claire</a>
-                    </div>
-                </div>
-            </div>
-        </nav>
-    <h1>Let's Make A List</h1>
+    <nav class="navbar navbar-expand-md navbar-dark bg-primary">
+      <div class="container-fluid">
+          <a class="navbar-brand" href="#">To Do Lists!</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarID"
+              aria-controls="navbarID" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarID">
+              <div class="navbar-nav">
+                  <a class="nav-link active" aria-current="page" href="Mace.html">Mace</a>
+                  <a class="nav-link active" aria-current="page" href="Phi.html">Phi</a>
+                  <a class="nav-link active" aria-current="page" href="Claire.html">Claire</a>
+              </div>
+          </div>
+      </div>
+  </nav>
+  <main class="bg-dark ">
+    <h1 class="text-danger text-left">Let's Make A List</h1>
     <div class="container">
-        <h2>THINGS TO GET DONE!</h2>
-
-        <ul class="list">
-          <li>Study Javascript</li>
-          <li>Practice JavaScript</li>
-          <li>Watch JavaScript Videos</li>
-          <li>Eat</li>
-          <li>Sleep</li>
-          
-        </ul>
+        <h2 class="lead text-bold text-success">THINGS TO GET DONE!</h2>
+          <div class="bg-light px-sm-2">
+            <ul class="list ">
+              <li>Study Javascript</li>
+              <li>Practice JavaScript</li>
+              <li>Watch JavaScript Videos</li>
+              <li>Eat</li>
+              <li>Sleep</li>
+          </ul>
+          </div>
     </div>
     <input type="text" class="items" placeholder="Add another item..." id="newToDo">
   <button id="submit">Add to list</button>
-
-
-    
+  </main>
 
     
-    
 
+    
+    
+  <nav class="navbar fixed-bottom navbar-expand-sm navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Lists...right!?</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" aria-current="page" href="Home.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Mace.html">Mace</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Phi.html">Phi</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Claire.html">Claire</a>
+          </li>
+          
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
     <script src="todo.js"></script>
   </body>
 </html>

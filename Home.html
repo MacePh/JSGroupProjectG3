@@ -10,10 +10,11 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
-   
+  
   </head>
   <body>
-        <nav class="navbar navbar-expand-sm navbar-light bg-primary">
+<!-- Navbar-Top -->
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">To Do Lists!</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarID"
@@ -29,28 +30,145 @@
                 </div>
             </div>
         </nav>
-    <h1>Let's Make A List</h1>
-    <div class="container">
-        <h2>THINGS TO GET DONE!</h2>
+        <main>
+<!-- Welcome Message -->
+<section class="bg-image py-5 text-center text-light container"  
+         style="background-image: url('Assets/to-do-list-compressor.jpg');
+         height: 80vh;">
+            <div class="row py-lg-5">
+              <div class="col-lg-6 col-md-8 mx-auto">
+                <h1 class="font-weight-light">Hello & Welcome</h1>
+                <p class="lead ">to our humble site dedicated to lists! Below you will find a beautiful gallery of lists throughout the ages.
+                  We would also like to encourage you to <strong>MAKE</strong> your own!
+                </p>
+                <p>
+                  <a href="#gallery1"class="btn btn-primary my-2">Checkout Gallery</a>
+                  <a href="#" class="btn btn-secondary my-2">Stay here.</a>
+                </p>
+              </div>
+            </div>
+          </section>
 
-        <ul class="list">
-          <li>Study Javascript</li>
-          <li>Practice JavaScript</li>
-          <li>Watch JavaScript Videos</li>
-          <li>Eat</li>
-          <li>Sleep</li>
-          
-        </ul>
+          <div class="album py-5 bg-light">
+            <div class="container">
+      
+              <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                <div class="col" id="gallery1">
+                  <div class="card shadow-sm">
+                    <img src="Assets/lady-with-long-list.jpg" alt="">
+                    <div class="card-body">
+                      <p class="card-text">This lady has a very long to do list!</p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <small class="text-muted">Yikes</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card shadow-sm">
+                     <img src="Assets/Lady-2-List.jpg" alt="">
+                    <div class="card-body">
+                      <p class="card-text">This lady has 2 lists!</p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <small class="text-muted">Nice</small>
+                        
+              
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card shadow-sm">
+                    <img src="Assets/Lady-wraps-list.jpg" alt="">
+                    <div class="card-body">
+                      <p class="card-text">This lady has wrapped a maniquen in her list!</p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <small class="text-muted">Crazy</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+      
+                <div class="col">
+                  <div class="card shadow-sm">
+                    <img src="Assets/overhead-list.jpg" alt="">
+                    <div class="card-body">
+                      <p class="card-text">Hera sits a succulent plant, an alarm clock, half a cup of coffee, a calendar, a clip board, paperclips, the corner of a leaf, and of course...a To-Do list!</p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <small class="text-muted">Fancy</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card shadow-sm">
+                    <img src="Assets/to-do-list.jpg" alt="">
+      
+                    <div class="card-body">
+                      <p class="card-text">Just a pen, most of the coffee, and a to-do list!.</p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <small class="text-muted">Simple</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card shadow-sm">
+                    <img src="Assets/write-on-wall.jpg" alt="">
+      
+                    <div class="card-body">
+                      <p class="card-text">This lady writes her list on the wall!</p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <small class="text-muted">Go girl</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+      
+               
+      
+                  
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+        </main>
+      
+        <footer class="text-muted py-5">
+          <div class="container">
+            <p class="float-right mb-1">
+              <a href="#">Back to top</a>
+            </p>
+            <p class="mb-1 text-center">Hopefully you enjoyed! Now lets make our own!</p>
+          </div>
+        </footer>
+        <br>
+
+<nav class="navbar fixed-bottom navbar-expand-sm navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Lists...right!?</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" aria-current="page" href="Home.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Mace.html">Mace</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Phi.html">Phi</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Claire.html">Claire</a>
+      </ul>
     </div>
-    <input type="text" class="items" placeholder="Add another item..." id="newToDo">
-  <button id="submit">Add to list</button>
-
-
-    
-
-    
-    
-
+  </div>
+</nav>
   <script src=""tdl-functions.js></script>
   <script src="todo.js"></script>
   </body>
