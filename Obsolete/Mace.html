@@ -14,7 +14,7 @@
   </head>
   <body>
     <!-- Top Nav Bar -->
-    <nav class="navbar navbar-expand-md navbar-dark bg-primary">
+    <!-- <nav class="navbar navbar-expand-md navbar-dark bg-primary">
       <div class="container-fluid">
           <a class="navbar-brand" href="#">To Do Lists!</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarID"
@@ -29,40 +29,28 @@
               </div>
           </div>
       </div>
-  </nav>
-  <div class="container">
-    <div id="main" class="card card-body">
-      <h2 class="title">Add Items</h2>
-      <form id="addForm" class="form-inline mb-3">
-        <input type="text" class="form-control mr-2" id="item" />
-        <input type="submit" class="btn btn-dark" value="Submit" />
-      </form>
-      <h2 class="title">Items</h2>
-      <ul id="items" class="list-group">
-        <li class="list-group-item">
-          Item 1
-          <button class="btn btn-danger btn-sm float-right delete">X</button>
-        </li>
-        <li class="list-group-item">
-          Item 2
-          <button class="btn btn-danger btn-sm float-right delete">X</button>
-        </li>
-        <li class="list-group-item">
-          Item 3
-          <button class="btn btn-danger btn-sm float-right delete">X</button>
-        </li>
-        <li class="list-group-item">
-          Item 4
-          <button class="btn btn-danger btn-sm float-right delete">X</button>
-        </li>
-      </ul>
+  </nav> -->
+
+<!-- User Interface -->
+<div class="container">
+  <h1>Your Own List</h1>
+       <div class="inPutArea">
+
+       <input class="textBox" type="text" id="myInput" placeholder="Input Task Here">
+        <button id="inputButton" onclick="sbmt()" class="addBtn">ADD</button>
     </div>
-  </div>   
+  
+        <ul id="tdUl">
+          <li><span class="itemButton btn-lg text-muted" type="text">Your items go here. click me to delete!<span class="btn-sm hvrBtn">complete</span></span></li>
+
+        </ul>
+        
+    </div>        
 
 
     
     
-  <nav class="navbar fixed-bottom navbar-expand-sm navbar-dark bg-dark">
+  <!-- <nav class="navbar fixed-bottom navbar-expand-sm navbar-dark bg-dark">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Lists...right!?</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -87,7 +75,7 @@
         </ul>
       </div>
     </div>
-  </nav>
+  </nav> -->
     <script src="todo.js"></script>
   </body>
 </html>
