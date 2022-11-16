@@ -19,6 +19,7 @@ for (i = 0; i < close.length; i++) {
   }
 }
 
+
 // Add a "checked" symbol when clicking on a list item
 var list = document.querySelector('ul');
 list.addEventListener('click', function(ev) {
@@ -49,6 +50,10 @@ function newElement() {
   for (i = 0; i < close.length; i++) {
     close[i].onclick = function() {
       var div = this.parentElement;
+      var fli = document.createElement("li");
+      var inputF = div.firstChild;
+     fli.appendChild(inputF);
+      document.getElementById("myULFinished").appendChild(fli); 
       div.style.display = "none";
     }
   }
