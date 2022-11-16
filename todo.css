@@ -54,3 +54,43 @@ h2 {
   padding: 0rem 0 0 4rem;
   border: 1px solid rgb(235, 229, 229);
 } */ 
+.addBtn {
+  /* padding: 10px;
+  width: 25%; */
+  background: #d9d9d9;
+  color: #555;
+  width: 25%;
+  height: 30px;
+  float: right;
+  text-align: center;
+  /* font-size: 16px; */
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 1;
+}
+
+.addBtn:hover {
+  background-color: #bbb;
+}
+.inputArea{
+  width:50%;
+}
+.textBox{
+  width: 75%;
+  height: 30px;
+}
+.itemButton{
+  border:0;
+  background: #fff;
+}
+.itemButton:hover {
+  background-color: #bbb;
+}
+.hvrBtn{
+  border:0;
+  color: #fff;
+  background-color: #fff;
+}
+.hvrBtn:hover {
+  background-color: #bbb;
+}
