@@ -7,7 +7,7 @@ body {
   background: #2f2f2f;
   /* padding: 2.2rem 0 0 5rem;   */
   /* white-space: nowrap; */
-}
+/* } */
 
 /* h1 {
   
@@ -21,15 +21,16 @@ h2 {
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 0.1rem;
-  border-bottom: 2px solid #111; */
+  border-bottom: 2px solid #111; 
 }
 
 /* .list {
   font-size: 1.8rem;
   font-weight: 400;
   padding-left: 0.5rem;
-  margin-bottom: 2.8rem; */
-}
+  margin-bottom: 2.8rem; 
+}*/
+
 
 /* button { 
   background-color: rgb(203, 213, 210);
@@ -52,4 +53,4 @@ h2 {
   background-size: 90% 1.9rem;
   padding: 0rem 0 0 4rem;
   border: 1px solid rgb(235, 229, 229);
-} */ */
+} */ 
