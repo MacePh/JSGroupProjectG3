@@ -32,20 +32,21 @@
   </nav> -->
 
 <!-- User Interface -->
-<div class="container">
-  <h1>Your Own List</h1>
-       <div class="inPutArea">
+<div id="myDIV" class="header">
+  <h2>My To Do List</h2>
+  <input type="text" id="myInput" placeholder="Title...">
+  <span onclick="newElement()" class="addBtn">Add</span>
+</div>
 
-       <input class="textBox" type="text" id="myInput" placeholder="Input Task Here">
-        <button id="inputButton" onclick="sbmt()" class="addBtn">ADD</button>
-    </div>
-  
-        <ul id="tdUl">
-          <li><span class="itemButton btn-lg text-muted" type="text">Your items go here. click me to delete!<span class="btn-sm hvrBtn">complete</span></span></li>
-
-        </ul>
-        
-    </div>        
+<ul id="myUL">
+  <li>Hit the gym</li>
+  <li class="checked">Pay bills</li>
+  <li>Meet George</li>
+  <li>Buy eggs</li>
+  <li>Read a book</li>
+  <li>Organize office</li>
+</ul>
+<script src="todo.js"></script>
 
 
     
