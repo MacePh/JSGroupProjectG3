@@ -2,6 +2,7 @@
 let form = document.getElementById("addForm")
     let list = document.getElementById('itemsUL');
 
+
     // add-task button function
     function getLis() {
         return Array.from(list.childNodes).filter(item => item.tagName === 'LI')
@@ -10,11 +11,32 @@ let form = document.getElementById("addForm")
     function addTodo(el) {
         let newLI = document.createElement('li');
         newLI.id = el.id
+        let newBtn= document.createElement('button')
+        //let txt = document.createTextNode("\u00D7");
+        newBtn.className = "btn btn-secondary btn-sm float-right delete";
+        //newBtn.txt.innerHTML = text
+        //appendChild(txt);
+        //newBtn = newBtn.value;
+      //  newLI.appendChild(newBtn); 
+          newlist.innerHTML = newBtn
         newLI.className = "list-group-item";
         newLI.innerHTML = document.getElementById('item').value;
         list.appendChild(newLI);
         document.getElementById("item").value = ""
+        console.log(newLI);
     }
+        // //function submitunction sbmt() {
+        //     let newLI = document.createElement('li');//creates new list item
+        //     newLI.tagName = "LI";
+        //     let newBtn = document.createElement('span');//creates a button to go into new list item
+        //     newBtn.innerHTML = (myInput).value;//pulls input form into the button text
+        //     newBtn.className = "itemButton btn-sm";//gives button appropriate class names
+        //     newBtn.setAttribute("onclick", "deleteItem(event)");
+        //     newLI.appendChild(newBtn);//puts newBtn into the list item
+        //     parentUL.appendChild(newLI);//inserts complete button into the origninal UL
+        //     document.getElementById("myInput").value = ""
+        //     // console.log(newLI)
+        // };
 
     form.addEventListener("submit", function (event) {
         event.preventDefault()
@@ -34,6 +56,29 @@ let form = document.getElementById("addForm")
         addTodo(newTodo)
         console.log(getLis())
     });
+
+
+
+    // function deleteItem() {
+    //     let d86 = event.target;
+    //     let dPN86 = event.target.parentNode;
+    //     parentUL.removeChild(dPN86);}
+    //     //     document.e.target.remove
+    
+    
+    //     //function submitunction sbmt() {
+    //         let newLI = document.createElement('li');//creates new list item
+    //         newLI.tagName = "LI";
+    //         let newBtn = document.createElement('span');//creates a button to go into new list item
+    //         newBtn.innerHTML = (myInput).value;//pulls input form into the button text
+    //         newBtn.className = "itemButton btn-sm";//gives button appropriate class names
+    //         newBtn.setAttribute("onclick", "deleteItem(event)");
+    //         newLI.appendChild(newBtn);//puts newBtn into the list item
+    //         parentUL.appendChild(newLI);//inserts complete button into the origninal UL
+    //         document.getElementById("myInput").value = ""
+    //         // console.log(newLI)
+    //    // };
+    
 
     // myUL.addEventListener('click', function (event) { // // get the element
 
