@@ -12,8 +12,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
    
   </head>
-  <body>
-     <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+  <header>     
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">To Do Lists!</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarID"
@@ -28,48 +28,37 @@
                     </div>
                 </div>
             </div>
-        </nav>
-
-
-  <div class="card bg-light " style="width:50%;">
+        </nav></header>
+  <body >
+    <br><br><br>
+  <div class="container  " style="width:50rem; background-color:rgb(245, 228, 226);">
     <!-- <img src="https://images.unsplash.com/photo-1561154464-82e9adf32764?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" class="card-img-top" alt="..."> -->
     <div class="card-body">
-      <h2 class="card-title">A List You Can Keep!</h2>
-      <h6 class="card-subtitle mb-2 text-muted ">Just don't refresh the page.</h6>
+      <h1 class="card-title">A List You Can Keep!</h1>
+      <h6 class="card-subtitle mb-3 text-muted"><i>Just don't refresh the page.</i></h6>
       <hr>
       <p class="card-text text-left">Simply type in the box below and press add!.</p>
       <div class="inPutArea">
         <input class="textBox" type="text" id="myInput" placeholder="Input Task Here">
-        <span id="inputButton" onclick="sbmt()" class="addBtn">ADD</span>
+        <span id="inputButton" onclick="sbmt()" class="addBtn btn-lg btn-outline-dark">ADD</span>
       </div>
       <hr>
       <div class="container border">
-          <ul class="container bg-white" id="tdUl">
+          <ul class="container bg-white list-group" id="tdUl">
           <!-- <li><span class="itemButton btn-sm text-muted" type="text">Your items go here. click me to delete!<span class="btn-sm hvrBtn deleteBtn">complete</span></span></li> -->
-          <li><span class="itemButton btn-md text-muted" onclick="deleteItem(event)">Your items go here. click me to delete!</span></li>
+          <li><span class="itemButton btn-md text-muted list-group-item" onclick="deleteItem(event)">Your items go here. click me to delete!</span></li>
         </ul>
       </div>
     </div>
     
     </div>
-  <!-- </div>
-      <h1 class="text-dark">Your Own List</h1>
-      <div class="inPutArea">
-        <input class="textBox" type="text" id="myInput" placeholder="Input Task Here">
-        <span id="inputButton" onclick="sbmt()" class="addBtn">ADD</span>
-      </div>
-    <div> -->
+ 
       
-      
-          <!-- <input type="text" class="items" placeholder="Add another item..." id="newToDo"> -->
-        <!-- <button id="submit">Add to list</button> -->
-        <!-- <button class="delete">delete</button>  --> 
-        </main>
-
+     <script src="mace.js"></script>
+  </body>   
+        
     
-
-    
-    
+<footer>
   <nav class="navbar fixed-bottom navbar-expand-sm navbar-dark bg-dark"> 
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Lists...right!?</a>
@@ -96,6 +85,5 @@
       </div>
     </div>
   </nav>
-    <script src="mace.js"></script>
-  </body>
+</footer>
 </html>
