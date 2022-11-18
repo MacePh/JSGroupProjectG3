@@ -1,6 +1,6 @@
-/* Add a "checked" mark when clicked on */
-/*ul li.checked::before {
-    content: '';
+ /* Add a "checked" mark when clicked on */
+/* ul li.checked::before { */
+    /* content: '';
     position: absolute;
     border-color: #fff;
     border-style: solid;
@@ -10,8 +10,8 @@
     transform: rotate(45deg);
     height: 15px;
     width: 7px;
-  }
-
+  } */
+/* 
   // Click on a close button to hide the current list item
 var close = document.getElementsByClassName("close");
 var i;
@@ -19,5 +19,8 @@ for (i = 0; i < close.length; i++) {
   close[i].onclick = function() {
     var div = this.parentElement;
     div.style.display = "none";
-  }
-}
+  } */
+
+li::hov {
+  text-decoration-line: line-through;
+} 

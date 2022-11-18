@@ -8,7 +8,7 @@ let form = document.getElementById("addForm")
     }
 
     function addTodo(el) {
-        let newLI = document.createElement('li');
+        let newLI = document.createElement('li');//Creates list item
         newLI.id = el.id
         newLI.className = "list-group-item";
         newLI.innerHTML = document.getElementById('item').value;
@@ -41,6 +41,13 @@ let form = document.getElementById("addForm")
         addTodo(newTodo)
         console.log(getLis())
     });
+
+
+    function foo() {
+        // let t = event.target;
+        let xGonnnGiveItToYa = event.target.parentNode;
+        list.removeChild(xGonnnGiveItToYa);
+    }
 
     // myUL.addEventListener('click', function (event) { // // get the element
 
