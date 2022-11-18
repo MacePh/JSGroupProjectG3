@@ -8,12 +8,19 @@ let form = document.getElementById("addForm")
     }
 
     function addTodo(el) {
-        let newLI = document.createElement('li');
+        let newLI = document.createElement('li');//Creates list item
         newLI.id = el.id
         newLI.className = "list-group-item";
         newLI.innerHTML = document.getElementById('item').value;
         list.appendChild(newLI);
+        let newBtn = document.createElement('button');//creates a button to go into new list item
+        newBtn.innerHTML = 'x';//.value;//pulls input form into the button text
+        newBtn.className = "btn btn-secondary btn-sm float-right delete";//gives button appropriate class names
+        newBtn.setAttribute("onclick", "foo(event)");
+        newLI.appendChild(newBtn);//puts newBtn into the list item
+        list.appendChild(newLI);//inserts complete button into the origninal UL
         document.getElementById("item").value = ""
+    console.log(newBtn)
     }
 
     form.addEventListener("submit", function (event) {
@@ -34,6 +41,13 @@ let form = document.getElementById("addForm")
         addTodo(newTodo)
         console.log(getLis())
     });
+
+
+    function foo() {
+        // let t = event.target;
+        let xGonnnGiveItToYa = event.target.parentNode;
+        list.removeChild(xGonnnGiveItToYa);
+    }
 
     // myUL.addEventListener('click', function (event) { // // get the element
 
