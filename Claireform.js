@@ -13,7 +13,14 @@ let form = document.getElementById("addForm")
         newLI.className = "list-group-item";
         newLI.innerHTML = document.getElementById('item').value;
         list.appendChild(newLI);
+        let newBtn = document.createElement('button');//creates a button to go into new list item
+        newBtn.innerHTML = 'x';//.value;//pulls input form into the button text
+        newBtn.className = "btn btn-secondary btn-sm float-right delete";//gives button appropriate class names
+        newBtn.setAttribute("onclick", "foo(event)");
+        newLI.appendChild(newBtn);//puts newBtn into the list item
+        list.appendChild(newLI);//inserts complete button into the origninal UL
         document.getElementById("item").value = ""
+    console.log(newBtn)
     }
 
     form.addEventListener("submit", function (event) {
