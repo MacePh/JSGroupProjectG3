@@ -82,8 +82,10 @@ h2 {
 .itemButton{
   border:0;
   background: #fff;
+  width:25rem;
 }
 .itemButton:hover {
+  text-decoration-line: line-through;
   background-color: #bbb;
 }
 .hvrBtn{
